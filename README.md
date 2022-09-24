@@ -4,7 +4,7 @@ Demo of Kadabra's embedding feature.
 
 The sandbox is hosted at:
 
-https://app.kadabra.dev/r/oq1wt03fr8iw8g3i/
+https://www.app.kadabra.dev/r/5c30gm06bk9xh5r2/
 
 ## Live documentation
 
