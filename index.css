@@ -1,0 +1,16 @@
+.scowl-example {
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.scowl-example table {
+  background-color: transparent !important;
+}
+
+.btn-sandbox {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: underline;
+}
