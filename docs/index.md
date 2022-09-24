@@ -1,7 +1,88 @@
-# Welcome to MkDocs
+# Scowl demo
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Demo of Scowl Count
+## Example 1
 
-<iframe style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;" src="https://www.app.kadabra.dev/embed/oq1wt03fr8iw8g3i?view=preview&showopensandbox=1&enablehorizontalscrolling=0" frameborder="0" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"></iframe>
+<div class="scowl-container">
+  <div class="scowl-example">
+    <code>CountUnique(user by ip)</code>
+    <table>
+      <thead>
+        <tr>
+          <th>ip</th>
+          <th>user</th>
+          <th>CountUnique(user by ip)</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>anna</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.2.2.2</td>
+        <td>brad</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>cela</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>anna</td>
+        <td>2</td>
+      </tr>
+      </tbody>
+    </table>
+    <a href="#" class="btn-sandbox" data-scowl-query="CountUnique(user by ip)">
+      Try in Sandbox
+    </a>
+  </div>
+</div>
+
+
+## Example 2
+
+<div class="scowl-container">
+  <div class="scowl-example">
+    <code>Count(user by ip where ip.Contains('1'))</code>
+    <table>
+      <thead>
+        <tr>
+          <th>ip</th>
+          <th>user</th>
+          <th>Count(user by ip where ip.Contains('1'))</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>anna</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2.2.2.2</td>
+        <td>brad</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>cela</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1.1.1.1</td>
+        <td>anna</td>
+        <td>3</td>
+      </tr>
+      </tbody>
+    </table>
+    <a href="#" class="btn-sandbox" data-scowl-query="Count(user by ip where ip.Contains('1'))">
+      Try in Sandbox
+    </a>
+  </div>
+</div>

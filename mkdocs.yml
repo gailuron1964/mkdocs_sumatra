@@ -2,3 +2,9 @@ site_name: My Docs
 
 theme:
   name: material
+
+extra_css:
+  - index.css
+
+extra_javascript:
+  - index.js
